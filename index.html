@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+      <title>Calculator</title>
+      <meta charset="UTF-8">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" type='text/javascript'></script>
+      <link href='styles.css' type='text/css' rel='stylesheet'>
+
+</head>
+
+
+<body>
+
+<div id="calc">
+
+    <div id="display">0</div>
+
+
+
+    <div id="numbers">
+     
+        <div id="zero" onclick = insert(0)>0</div> 
+        <div id="one" onclick = insert(1)>1</div>
+        <div id="two" onclick = insert(2)>2</div>
+        <div id="three" onclick = insert(3)>3</div>
+        <div id="four" onclick = insert(4)>4</div>
+        <div id="five" onclick = insert(5)>5</div>
+        <div id="six" onclick = insert(6)>6</div>
+        <div id="seven" onclick = insert(7)>7</div>
+        <div id="eight" onclick = insert(8)>8</div>
+        <div id="nine" onclick = insert(9)>9</div>
+        <div id="decimal" onclick = insert('.')>.</div>
+        
+        
+     </div>
+
+     <div id="operator">
+            <div id="add" onclick = insert('+')>+</div>
+            <div id="subtract" onclick = insert('-')>-</div>
+            <div id="multiply" onclick = insert('*')>*</div>
+            <div id="divide" onclick = insert('/')>%</div>
+            <div id="clear">CE</div> 
+            <!-- this needs to empty the entries array  -->
+            <div id="equals" onclick = doTheMath(entries)>=</div> 
+            <!-- //when the = button is clicked it will perform eval function -->
+    </div>
+
+    </div>
+        <script src="calculator.js" type='text/javascript'></script>
+        </body>
+        </html>
